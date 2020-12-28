@@ -1,0 +1,72 @@
+// var
+$font-path: "../webfonts" !default;
+
+// font-face
+@font-face {
+  font-family: NanumSquare;
+  src: url(NanumSquareR.eot); /* IE 호환성 보기 */
+  src: url(NanumSquareR.eot#iefix) format('embedded-opentype'), /* IE 6 ~ 8 */
+       url(NanumSquareR.woff2) format('woff2'), /* WOFF2 지원 브라우저 */
+       url(NanumSquareR.woff) format('woff'), /* 모던 브라우저 */
+       url(NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Noto Sans KR;
+	src: local('$'), local('NotoSansKR-Thin'),
+	url('#{$font-path}/NotoSansKR-Thin.woff2') format('woff2'),
+	url('#{$font-path}/NotoSansKR-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: Noto Sans KR;
+	src: local('$'), local('NotoSansKR-Light'),
+	url('#{$font-path}/NotoSansKR-Light.woff2') format('woff2'),
+	url('#{$font-path}/NotoSansKR-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Noto Sans KR;
+	src: local('$'), local('NotoSansKR-DemiLight'),
+	url('#{$font-path}/NotoSansKR-DemiLight.woff2') format('woff2'),
+	url('#{$font-path}/NotoSansKR-DemiLight.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Noto Sans KR;
+	src: local('$'), local('NotoSansKR-Regular'),
+	url('#{$font-path}/NotoSansKR-Regular.woff2') format('woff2'),
+	url('#{$font-path}/NotoSansKR-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Noto Sans KR;
+	src: local('$'), local('NotoSansKR-Medium'),
+	url('#{$font-path}/NotoSansKR-Medium.woff2') format('woff2'),
+	url('#{$font-path}/NotoSansKR-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Noto Sans KR;
+	src: local('$'), local('NotoSansKR-Bold'),
+	url('#{$font-path}/NotoSansKR-Bold.woff2') format('woff2'),
+	url('#{$font-path}/NotoSansKR-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Noto Sans KR;
+	src: local('$'), local('NotoSansKR-Black'),
+	url('#{$font-path}/NotoSansKR-Black.woff2') format('woff2'),
+	url('#{$font-path}/NotoSansKR-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+// default
+$font-family: Noto Sans KR, sans-serif;

@@ -1,0 +1,57 @@
+@import "variables";
+
+// breakpoint
+$table:720px; // table 레이아웃 때문에 분기처리
+$mobile:768px;
+$tablet:1024px;
+$desktop:1025px;
+
+// transition 
+@mixin transition ($prop , $duration) {
+	-moz-transition-property: $prop;
+	-o-transition-property: $prop;
+	-webkit-transition-property:  $prop;
+	transition-property: $prop;	
+	-moz-transition-duration: $duration;
+	-o-transition-duration: $duration;
+	-webkit-transition-duration: $duration;
+	transition-duration: $duration;
+}
+
+// pseudo init
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+// media mixin
+@mixin table {
+	@media screen and (max-width:$table) {
+		@content;
+	}	
+}
+@mixin mobile {
+	@media screen and (max-width:$mobile) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (max-width:$tablet) {
+		@content;
+	}	
+}
+@mixin desktop {
+	@media screen and (min-width:$desktop){
+		@content;
+	}
+}
+
+// clearfix 
+@mixin clearfix {
+	&:before,&:after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+}

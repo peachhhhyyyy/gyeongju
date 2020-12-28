@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/*
+ * base/variables : 프로젝트 내에서 사용하는 스타일 관련 변수 정의
+ * base/mixin : 프로젝트 내에서 사용하는 스타일 관련 함수 정의
+ * base/reset : 브라우저 별 user agent 기본값 초기화
+ * base/fonts : 웹폰트 스타일 정의
+ * base/layout : 프로젝트 내에서 사용하는 레이아웃 스타일 정의
+ * global 공통 스타일은 하단에 표기
+*/
+
+/* reference files */
+@import './base/variables';
+@import './base/mixin';
+@import './base/component';
+@import './base/reset';
+@import './base/fonts';
+@import './base/layout';
+
+/* common */
+* {
+	font-family: $font-family;
+}
+*::selection {
+	background-color: #000;
+	color: #fff;
+}
+html, body {
+	height: 100vh;
+}
+body {
+	position: relative;
+	overflow-x: hidden;
+	width: 100vw;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: $font-family;
+	background: #fff;
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 8px;
+		border: 3px solid #fff;
+	}
+	&::-webkit-scrollbar-track {
+		background: #fff;
+		-webkit-box-shadow: inset 0 0 4px rgba(120, 120, 120, 0.2);
+	}
+	&::-webkit-scrollbar-thumb {
+		background: #d0d0d0;
+	}
+	&.is-active {
+		&:after {
+			content: '';
+			overflow: hidden;
+			position: fixed;
+			z-index: 900;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0,0,0,0.3);
+		}
+	}
+}
+.hidden {
+	overflow: hidden;
+	position: absolute;
+	left: -10000px;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+.browser {
+	position: absolute;
+	z-index: 1500;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+/* forced class */
+.nomargin {
+	margin: 0 !important;
+}
+.textleft {
+	text-align: left !important;
+}
+.wbr {
+	display: inline-block !important;
+	@include mobile {
+		display: block !important;
+	}
+}

@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="title" content="경주시청" />
+	<meta name="keywords" content="경주, 시청, 경주시청, 경주시청 홈페이지, Golden city, Gyeongju, Beautiful Gyeongju" />
+	<meta name="description" content="경주시청 홈페이지입니다." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link type="image/x-icon" href="../image/icon/favicon_gyeongju.ico" rel="shortcut icon" />
+	<!-- include default css -->
+	@@include('./work/include/css.inc')
+	<!-- //include default css -->
+	<link rel="stylesheet" href="../css/sub.css" />
+	<title>경주시 - Golden City ( Beautiful Gyeongju )</title>
+</head>
+<body>
+	<!-- include skip-navigation -->
+	@@include('./work/include/skip-navigation.inc')
+	<!-- //include skip-navigation -->
+
+	<!-- include header -->
+	@@include('./work/include/header.inc')
+	<!-- //include header -->
+
+	<!-- contents -->
+	<div class="contents" id="content">
+		<!-- sub -->
+		<section class="sub sub--notice">
+
+			<!-- section__01 -->
+			<div class="section section__01">
+				<div class="thumbnail"></div>
+				<div class="title__wrap">
+					<h1 class="title title--h1">공지사항</h1>
+				</div>
+			</div>
+			<!-- //section__01 -->
+
+			<!-- section__02 -->
+			<div class="section section__02">
+				<ul class="breadcrumb">
+					<li class="breadcrumb__item breadcrumb__item--home">
+						<a href="#"><span class="hidden">HOME</span></a>
+					</li>
+					<li class="breadcrumb__item">
+						<a href="javascript:void(0);"><span>공지사항</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- //section__02 -->
+
+			<!-- section__03 -->
+			<div class="section section__03">
+				<div class="title__wrap">
+					<h2 class="title title--h2" data-title="공지사항"><span>공지사항</span></h2>
+				</div>
+				<div class="search__wrap">
+					<div class="search__item">
+						<div class="title"><span>등록일</span></div>
+						<!-- pc -->
+						<div class="input input--date input--pc">
+							<div class="input__group">
+								<div class="input__item input__item--cal">
+									<span class="input__cell"><input type="text" class="datepicker start"></span>
+									<span class="input__cell input__cell--text"> ~ </span>
+									<span class="input__cell"><input type="text" class="datepicker end"></span>
+								</div>
+								<div class="input__item input__item--radio">
+									<div class="input__cell">
+										<input type="radio" name="radio" id="oneMonth1" class="datepicker-setter one-month-ago" tabindex="1">
+										<label for="oneMonth1">1개월</label>
+									</div>
+									<div class="input__cell">
+										<input type="radio" name="radio" id="threeMonth1" class="datepicker-setter three-month-ago" tabindex="2">
+										<label for="threeMonth1">3개월</label>
+									</div>
+									<div class="input__cell">
+										<input type="radio" name="radio" id="sixMonth1" class="datepicker-setter six-month-ago" tabindex="3">
+										<label for="sixMonth1">6개월</label>
+									</div>
+									<div class="input__cell">
+										<input type="radio" name="radio" id="oneYear1" class="datepicker-setter one-year-ago" tabindex="4">
+										<label for="oneYear1">12개월</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // pc -->
+
+						<!-- mo -->
+						<div class="input input--date input--mo">
+							<div class="input__group">
+								<div class="input__item input__item--radio">
+									<div class="input__cell">
+										<input type="radio" name="radioMo" id="oneMonth" class="datepicker-setter one-month-ago">
+										<label for="oneMonth">1개월</label>
+									</div>
+									<div class="input__cell">
+										<input type="radio" name="radioMo" id="threeMonth" class="datepicker-setter three-month-ago">
+										<label for="threeMonth">3개월</label>
+									</div>
+									<div class="input__cell">
+										<input type="radio" name="radioMo" id="sixMonth" class="datepicker-setter six-month-ago">
+										<label for="sixMonth">6개월</label>
+									</div>
+									<div class="input__cell">
+										<input type="radio" name="radioMo" id="oneYear" class="datepicker-setter one-year-ago">
+										<label for="oneYear">12개월</label>
+									</div>
+								</div>
+								<div class="input__item input__item--cal">
+									<span class="input__cell"><input type="text" class="datepicker start"></span>
+									<span class="input__cell input__cell--text"> ~ </span>
+									<span class="input__cell"><input type="text" class="datepicker end"></span>
+								</div>
+							</div>
+						</div>
+						<!-- // mo -->
+						<a href="#" class="button button--search"><span>검색</span></a>
+					</div>
+					<div class="search__item">
+						<div class="title"><span>검색</span></div>
+						<div class="input input--select">
+							<div class="input__group">
+								<div class="input__item input__item--select">
+									<select>
+										<option value="제목">제목</option>
+										<option value="내용">내용</option>
+										<option value="제목+내용">제목+내용</option>
+									</select>
+								</div>
+								<div class="input__item input__item--text">
+									<input type="text">
+								</div>
+							</div>
+						</div>
+						<a href="#" class="button button--search"><span>검색</span></a>
+					</div>
+				</div>
+			</div>
+			<!-- //section__03 -->
+
+			<!-- section__04 -->
+			<div class="section section__04">
+				<div class="support">
+					등록수 총 <span class="support__num">10</span> 건
+				</div>
+				<!-- pc -->
+				<div class="table__wrap">
+					<table>
+						<caption class="caption hidden">공지사항</caption>
+						<colgroup>
+							<col style="width:92px;">
+							<col>
+							<col style="width:92px;">
+							<col style="width:137px;">
+						</colgroup>
+						<thead>
+						<tr>
+							<th>번호</th>
+							<th>제목</th>
+							<th>첨부</th>
+							<th>등록일</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>10</td>
+							<td><a href="#">2018년 희망 리턴패키지 제기교육 참여자 모집 한줄</a></td>
+							<td><i class="icon icon--download"><span class="hidden">다운로드</span></i></td>
+							<td>2018.11.20</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td><a href="#">리턴패키지 제기교육 참여자 모집 한줄 텍스트 길어질시 다운 아이콘 기준 30px 여백여백여백여백여백여백여백여백여백여백여백여백여백여백여백여백여백여백여백여백</a></td>
+							<td><i class="icon icon--download"><span class="hidden">다운로드</span></i></td>
+							<td>2018.11.20</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td><a href="#">2018년 희망 리턴패키지 제기교육 참여자 모집 한줄</a></td>
+							<td><i class="icon icon--download"><span class="hidden">다운로드</span></i></td>
+							<td>2018.11.20</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td><a href="#">2018년 희망 리턴패키지 제기교육 참여자 모집 한줄</a></td>
+							<td><i class="icon icon--download"><span class="hidden">다운로드</span></i></td>
+							<td>2018.11.20</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td><a href="#">2018년 희망 리턴패키지 제기교육 참여자 모집 한줄</a></td>
+							<td><i class="icon icon--download"><span class="hidden">다운로드</span></i></td>
+							<td>2018.11.20</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td><a href="#">2018년 희망 리턴패키지 제기교육 참여자 모집 한줄</a></td>
+							<td><i class="icon icon--download"><span class="hidden">다운로드</span></i></td>
+							<td>2018.11.20</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td><a href="#">2018년 희망 리턴패키지 제기교육 참여자 모집 한줄</a></td>
+							<td><i class="icon icon--download"><span class="hidden">다운로드</span></i></td>
+							<td>2018.11.20</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td><a href="#">2018년 희망 리턴패키지 제기교육 참여자 모집 한줄</a></td>
+							<td><i class="icon icon--download"><span class="hidden">다운로드</span></i></td>
+							<td>2018.11.20</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td><a href="#">2018년 희망 리턴패키지 제기교육 참여자 모집 한줄</a></td>
+							<td><i class="icon icon--download"><span class="hidden">다운로드</span></i></td>
+							<td>2018.11.20</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td><a href="#">2018년 희망 리턴패키지 제기교육 참여자 모집 한줄</a></td>
+							<td><i class="icon icon--download"><span class="hidden">다운로드</span></i></td>
+							<td>2018.11.20</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="pagination">
+					<a href="#" class="pagination__item"><i class="icon icon--first"><span class="hidden">FIRST</span></i></a>
+					<a href="#" class="pagination__item"><i class="icon icon--prev"><span class="hidden">PREV</span></i></a>
+					<div class="pagination__item pagination__item--page">
+						<a href="#">1</a>
+						<a href="#" class="current">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+					</div>
+					<a href="#" class="pagination__item"><i class="icon icon--next"><span class="hidden">NEXT</span></i></a>
+					<a href="#" class="pagination__item"><i class="icon icon--last"><span class="hidden">LAST</span></i></a>
+				</div>
+				<!-- // pc -->
+
+				<!-- mo -->
+				<div class="table__list">
+					<div class="table__item">
+						<a href="#" class="table__item--head">2018년 희망 리턴패키지 제기교육 참여자 모집리턴패키지 제기교육 참여자 모집리턴패키지 제기교육 참여자 모집리턴패키지 제기교육 참여자 모집리턴패키지 제기교육 참여자 모집</a>
+						<div class="table__item--foot">
+							<span class="table__cell">2018-11-30</span>
+							<span class="table__cell"><i class="icon icon--download"><span class="hidden">다운로드</span></i></span>
+						</div>
+					</div>
+					<div class="table__item">
+						<a href="#" class="table__item--head">2018년 희망 리턴패키지</a>
+						<div class="table__item--foot">
+							<span class="table__cell">2018-11-30</span>
+							<span class="table__cell"><i class="icon icon--download"><span class="hidden">다운로드</span></i></span>
+						</div>
+					</div>
+					<div class="table__item">
+						<a href="#" class="table__item--head">2018년 희망 리턴패키지 제기교육 참여자 모집</a>
+						<div class="table__item--foot">
+							<span class="table__cell">2018-11-30</span>
+							<span class="table__cell"><i class="icon icon--download"><span class="hidden">다운로드</span></i></span>
+						</div>
+					</div>
+					<div class="table__item">
+						<a href="#" class="table__item--head">2018년 리턴패키지 제기교육 참여자 모집</a>
+						<div class="table__item--foot">
+							<span class="table__cell">2018-11-30</span>
+							<span class="table__cell"><i class="icon icon--download"><span class="hidden">다운로드</span></i></span>
+						</div>
+					</div>
+					<div class="table__item">
+						<a href="#" class="table__item--head">2018년 희망모집</a>
+						<div class="table__item--foot">
+							<span class="table__cell">2018-11-30</span>
+							<span class="table__cell"><i class="icon icon--download"><span class="hidden">다운로드</span></i></span>
+						</div>
+					</div>
+					<a href="#" class="button button--more">
+						<i class="icon icon--more"><span>더보기</span></i>
+					</a>
+				</div>
+				<!-- // mo -->
+			</div>
+			<!-- //section__04 -->
+		</section>
+		<!-- //sub -->
+	</div>
+	<!-- //contents -->
+
+	<!-- include footer -->
+	@@include('./work/include/footer.inc')
+	<!-- //include footer -->
+
+	<!-- include include-script -->
+	@@include('./work/include/include-script.inc')
+	<!-- //include include-script -->
+	<script>
+        $( function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                yearSuffix:'-'
+            });
+            $( ".datepicker.start" ).datepicker({firstDay:1}).datepicker("setDate", "-1m");
+            $( ".datepicker.end" ).datepicker({firstDay:1}).datepicker("setDate", "0d");;
+            $('.datepicker-setter').each(function(){
+                var $this = $(this);
+                $this.on("click",function(){
+                    if($this.hasClass("one-month-ago")){
+                        $( ".datepicker.start" ).datepicker("setDate", "-1m");
+                    }
+                    else if($this.hasClass("three-month-ago")){
+                        $( ".datepicker.start" ).datepicker("setDate", "-3m");
+                    }
+                    else if($this.hasClass("six-month-ago")){
+                        $( ".datepicker.start" ).datepicker("setDate", "-6m");
+                    }
+                    else if($this.hasClass("one-year-ago")){
+                        $( ".datepicker.start" ).datepicker("setDate", "-12m");
+                    }
+                })
+            })
+        } );
+	</script>
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>경주시 인구성장 플랫폼 | Guide </title>
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/docs.css">
+	<link rel="stylesheet" href="assets/css/guide-style.css">
+</head>
+<body>
+
+<!-- header -->
+<div class="bs-docs-header" id="content">
+	<div class="container">
+		<h1>경주시 인구성장 플랫폼 Guide</h1>
+	</div>
+</div>
+<!-- //header -->
+
+<!-- container -->
+<div class="container" id="top">
+	<div class="row">
+		<!-- left column -->
+		<div class="col-md-3">
+			<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+				<ul class="nav bs-docs-sidenav">
+					<li>
+						<a href="#content01">업무요건</a>
+					</li>
+					<li>
+						<a href="#content02">폴더구조</a>
+					</li>
+					<li>
+						<a href="#content03">페이지리스트</a>
+					</li>
+				</ul>
+				<a class="back-to-top" href="#top">↑ Back to Top</a>
+			</nav>
+		</div>
+		<!-- //left column -->
+
+		<!-- main column -->
+		<div class="col-md-9">
+			<!-- 업무요건 -->
+			<h3 class="uio-sub-tit" id="content01">업무요건</h3>
+			<div class="uio-table align-left">
+				<table>
+					<caption>업무요건</caption>
+					<colgroup>
+						<col style="width:120px;">
+						<col style="width:120px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" class="strong">작업대상</th>
+							<td colspan="2">경주시 인구성장 플랫폼</td>
+						</tr>
+						<tr>
+							<th scope="row" class="strong">페이지수량</th>
+							<td colspan="2">40p</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="5" class="strong">지원범위</th>
+							<th>브라우저</th>
+							<td>IE 10+, IE Edge, Chrome, FireFox, Opera, Safari 10+</td>
+						</tr>
+						<tr>
+							<th scope="row">모바일</th>
+							<td>Android 5+, iOS 10+</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="3">반응형웹</th>
+							<td>Web : 1025px ~ </td>
+						</tr>
+						<tr>
+							<td>Tablet : 768px ~ 1024px (기본) / 1025px ~ 1279px (큰화면)</td>
+						</tr>
+						<tr>
+							<td>Mobile : 320px ~ 767px</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //업무요건 -->
+
+			<!-- 폴더구조 -->
+			<h3 class="uio-sub-tit" id="content02">폴더구조</h3>
+			<div class="uio-table align-left">
+				<table>
+					<caption>폴더구조 - 1 Depth, 2 Depth, 3 Depth, 4 Depth, 설명</caption>
+					<colgroup>
+						<col style="width:10%;">
+						<col style="width:18%;">
+						<col style="width:20%;">
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+					<tr>
+						<th scope="col" class="strong">1 Depth</th>
+						<th scope="col" class="strong">2 Depth</th>
+						<th scope="col" class="strong">3 Depth</th>
+						<th scope="col" class="strong">4 Depth</th>
+						<th scope="col" class="strong">설명</th>
+					</tr>
+					</thead>
+					<tbody>
+					<!-- root -->
+					<tr>
+						<th scope="row" rowspan="10" class="strong"><span class="uio-ico-folder1"></span>/</th>
+					</tr>
+					<!-- //root -->
+
+					<!-- dist -->
+					<tr>
+						<td><span class="uio-ico-folder2"></span>css</td>
+						<td></td>
+						<td></td>
+						<td>CSS로 컴파일 된 스타일시트</td>
+					</tr>
+					<tr>
+						<td><span class="uio-ico-folder2"></span>html</td>
+						<td></td>
+						<td></td>
+						<td>산출물 마크업</td>
+					</tr>
+					<tr>
+						<td><span class="uio-ico-folder2"></span>image</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><span class="uio-ico-folder2"></span>js</td>
+						<td></td>
+						<td></td>
+						<td>common.js, vendor.js 로 각각 통합한 스크립트</td>
+					</tr>
+					<tr>
+						<td><span class="uio-ico-folder2"></span>webfonts</td>
+						<td></td>
+						<td></td>
+						<td>아이콘, 폰트에 사용하는 웹폰트</td>
+					</tr>
+					<!-- //dist -->
+
+					<!-- guide -->
+					<tr>
+						<td rowspan="3"><span class="uio-ico-folder2"></span>assets</td>
+						<td><span class="uio-ico-folder2"></span>css</td>
+						<td></td>
+						<td>가이드 내 스타일시트</td>
+					</tr>
+					<tr>
+						<td><span class="uio-ico-folder2"></span>image</td>
+						<td></td>
+						<td>가이드 내 이미지</td>
+					</tr>
+					<tr>
+						<td><span class="uio-ico-folder2"></span>js</td>
+						<td></td>
+						<td>가이드 내 스크립트</td>
+					</tr>
+					<tr>
+						<td>index.html</td>
+						<td></td>
+						<td></td>
+						<td>가이드 페이지</td>
+					</tr>
+					<!-- //guide -->
+					</tbody>
+				</table>
+			</div>
+			<!-- //폴더구조 -->
+
+			<!-- 페이지리스트 -->
+			<h3 class="uio-sub-tit" id="content03">페이지리스트</h3>
+			<div class="uio-table">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:15%;">
+						<col style="width:15%;">
+						<col style="width:15%;">
+						<col>
+						<col style="width:7%;">
+					</colgroup>
+					<thead>
+					<tr>
+						<th scope="col" class="strong">1 Depth</th>
+						<th scope="col" class="strong">2 Depth</th>
+						<th scope="col" class="strong">3 Depth</th>
+						<th scope="col" class="strong">링크</th>
+						<th scope="col" class="strong">유형</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>메인</td>
+						<td></td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/index.html" target="_blank">index.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="2">전입</td>
+						<td>전입시 지원사항</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/movein_01.html" target="_blank">movein_01.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>전입절차 안내</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/movein_02.html" target="_blank">movein_02.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="7">일자리</td>
+						<td>취업지원센터운영</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/work_01.html" target="_blank">work_01.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>청년창업지원센터</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/work_02.html" target="_blank">work_02.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="5">공공근로, 직업훈련</td>
+						<td>지역공동체일자리사업</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/work_03.html" target="_blank">work_03.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>지역실업자직업훈련</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/work_04.html" target="_blank">work_04.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>중소기업 인턴사원제</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/work_05.html" target="_blank">work_05.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>공공근로사업</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/work_06.html" target="_blank">work_06.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>관련사이트</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/work_07.html" target="_blank">work_07.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="6">결혼·임신·출산</td>
+						<td rowspan="2">출산장려금, 용품 지원</td>
+						<td>경주시</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/marriage_01.html" target="_blank">marriage_01.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>경상북도</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/marriage_02.html" target="_blank">marriage_02.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>세자녀이상 가족진료비지원</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/marriage_03.html" target="_blank">marriage_03.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>다복가정 희망카드 지원</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/marriage_04.html" target="_blank">marriage_04.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>출산용품 알뜰시장운영</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/marriage_05.html" target="_blank">marriage_05.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>결혼지원사업</td>
+						<td>알콩달콩 커플매칭</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/marriage_06.html" target="_blank">marriage_06.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="5">여성보육아동</td>
+						<td>여성정책</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/children_01.html" target="_blank">children_01.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>영유아보육지원</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/children_02.html" target="_blank">children_02.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>어린이집현황</td>
+						<td></td>
+						<td></td>
+						<td>외부링크(새창)</td>
+					</tr>
+					<tr>
+						<td rowspan="2">아동복지</td>
+						<td>아동복지시설</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/children_03.html" target="_blank">children_03.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>아동수당</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/children_04.html" target="_blank">children_04.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="2">교육</td>
+						<td>교육정책 및 사업</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/edu_01.html" target="_blank">edu_01.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>기타교육관련 안내</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/edu_02.html" target="_blank">edu_02.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="3">기업지원</td>
+						<td>중소기업 운전자금 지원</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/support_01.html" target="_blank">support_01.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>중소기업상담콜지원</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/support_02.html" target="_blank">support_02.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>기업지원정보</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/support_03.html" target="_blank">support_03.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="5">기업유치</td>
+						<td>기본현황</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/enterprise_01.html" target="_blank">enterprise_01.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>산업단지현황</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/enterprise_02.html" target="_blank">enterprise_02.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="3">투자인센티브</td>
+						<td>외국인 투자지원</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/enterprise_03.html" target="_blank">enterprise_03.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>지방투자촉진보조금</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/enterprise_04.html" target="_blank">enterprise_04.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>기업 투자유치 촉진 조례</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/enterprise_05.html" target="_blank">enterprise_05.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="3">주택</td>
+						<td>주택현황</td>
+						<td></td>
+						<td></td>
+						<td>외부링크(새창)</td>
+					</tr>
+					<tr>
+						<td>부동산조회</td>
+						<td>개별공시지가조회</td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/house_01.html" target="_blank">house_01.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>공동주택 지원사업</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/house_02.html" target="_blank">house_02.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="4">귀농</td>
+						<td>이사비지원</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/farming_01.html" target="_blank">farming_01.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>귀농인 영농정착지원</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/farming_02.html" target="_blank">farming_02.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>귀농인 농업창업 및 주택구입지원</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/farming_03.html" target="_blank">farming_03.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>기타귀농지원</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/farming_04.html" target="_blank">farming_04.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="3">경주시혜택</td>
+						<td>관광지 입장 할인</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/advantage_01.html" target="_blank">advantage_01.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>전입세대 쓰레기봉투 지원</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/advantage_02.html" target="_blank">advantage_02.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td>상수도 사용료 일부감면</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/advantage_03.html" target="_blank">advantage_03.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					<tr>
+						<td rowspan="2">공지사항</td>
+						<td>리스트</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/notice_list.html" target="_blank">notice_list.html</a>
+						</td>
+						<td>게시판</td>
+					</tr>
+					<tr>
+						<td>게시물</td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/notice_view.html" target="_blank">notice_view.html</a>
+						</td>
+						<td>게시판</td>
+					</tr>
+					<tr>
+						<td>전입몰</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>외부링크(새창)</td>
+					</tr>
+					<tr>
+						<td>브라우저 호환성</td>
+						<td></td>
+						<td></td>
+						<td style="text-align:left; padding-left:20px">
+							<a href="./html/browser.html" target="_blank">browser.html</a>
+						</td>
+						<td>페이지</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //페이지리스트 -->
+		</div>
+		<!-- //main column -->
+	</div>
+</div>
+<!-- //container -->
+
+<!-- footer -->
+<div class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+	  <p class="copyright">&copy;Copyright 2018 <a href="#">UI Lab</a> All Right Reserved</p>
+  </div>
+</div>
+<!-- //footer -->
+
+<!-- vendor -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- //vendor -->
+</body>
+</html>
